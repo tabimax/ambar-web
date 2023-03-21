@@ -31,20 +31,6 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Main Store",
-    layout: "/admin",
-    path: "/nft-marketplace",
-    icon: <Icon as={MdOutlineShoppingCart} width='20px' height='20px' color='inherit' />,
-    component: MainDashboard,
-  },
-  {
-    name: "Courses",
-    layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: "/data-tables",
-    component: DataTables,
-  },
-  {
     name: "Badges",
     layout: "/admin",
     path: "/profile",
@@ -57,6 +43,20 @@ const routes = [
     path: "/tasks",
     icon: <Icon as={FaTasks} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
+  },
+  {
+    name: "Ambar Store",
+    layout: "/admin",
+    path: "/nft-marketplace",
+    icon: <Icon as={MdOutlineShoppingCart} width='20px' height='20px' color='inherit' />,
+    component: MainDashboard,
+  },
+  {
+    name: "Courses",
+    layout: "/admin",
+    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+    path: "/data-tables",
+    component: DataTables,
   },
   {
     name: "My Library",
