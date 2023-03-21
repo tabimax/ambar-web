@@ -58,7 +58,7 @@ function TopCreatorTable(props) {
           mb='10px'
           boxShadow='0px 40px 58px -20px rgba(112, 144, 176, 0.26)'>
           <Text color={textColor} fontSize='xl' fontWeight='600'>
-            Top Creators
+            Top Winners
           </Text>
           <Button variant='action'>See all</Button>
         </Flex>
@@ -109,7 +109,7 @@ function TopCreatorTable(props) {
                           </Text>
                         </Flex>
                       );
-                    } else if (cell.column.Header === "Artworks") {
+                    } else if (cell.column.Header === "Positions") {
                       data = (
                         <Text
                           color={textColorSecondary}
@@ -117,16 +117,6 @@ function TopCreatorTable(props) {
                           fontWeight='500'>
                           {cell.value}
                         </Text>
-                      );
-                    } else if (cell.column.Header === "Rating") {
-                      data = (
-                        <Box>
-                          <Progress
-                            variant='table'
-                            colorScheme='brandScheme'
-                            value={cell.value}
-                          />
-                        </Box>
                       );
                     }
                     return (

@@ -21,8 +21,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
 import navImage from 'assets/img/layout/Navbar.png';
-import { MdNotificationsNone, MdInfoOutline } from 'react-icons/md';
-import { FaEthereum } from 'react-icons/fa';
+import { MdNotificationsNone } from 'react-icons/md';
+import { AiFillTrophy, AiFillFire } from 'react-icons/ai';
 import routes from 'routes.js';
 import { ThemeEditor } from './ThemeEditor';
 export default function HeaderLinks(props) {
@@ -35,7 +35,6 @@ export default function HeaderLinks(props) {
 	const ethColor = useColorModeValue('gray.700', 'white');
 	const borderColor = useColorModeValue('#E6ECFA', 'rgba(135, 140, 189, 0.3)');
 	const ethBg = useColorModeValue('secondaryGray.300', 'navy.900');
-	const ethBox = useColorModeValue('white', 'navy.800');
 	const shadow = useColorModeValue(
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.18)',
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
@@ -60,14 +59,11 @@ export default function HeaderLinks(props) {
 				p="6px"
 				align="center"
 				me="6px">
-				<Flex align="center" justify="center" bg={ethBox} h="29px" w="29px" borderRadius="30px" me="7px">
-					<Icon color={ethColor} w="9px" h="14px" as={FaEthereum} />
-				</Flex>
 				<Text w="max-content" color={ethColor} fontSize="sm" fontWeight="700" me="6px">
 					1,924
 					<Text as="span" display={{ base: 'none', md: 'unset' }}>
 						{' '}
-						ETH
+						G
 					</Text>
 				</Text>
 			</Flex>
@@ -96,10 +92,10 @@ export default function HeaderLinks(props) {
 					</Flex>
 					<Flex flexDirection="column">
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
-							<ItemContent info="Horizon UI Dashboard PRO" aName="Alicia" />
+							<ItemContent info="Ambar" aName="Alicia" />
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
-							<ItemContent info="Horizon Design System Free" aName="Josh Henry" />
+							<ItemContent info="Ambar" aName="Josh Henry" />
 						</MenuItem>
 					</Flex>
 				</MenuList>
@@ -107,7 +103,7 @@ export default function HeaderLinks(props) {
 
 			<Menu>
 				<MenuButton p="0px">
-					<Icon mt="6px" as={MdInfoOutline} color={navbarIcon} w="18px" h="18px" me="10px" />
+					<Icon mt="6px" as={AiFillTrophy} color={navbarIcon} w="18px" h="18px" me="10px" />
 				</MenuButton>
 				<MenuList
 					boxShadow={shadow}
@@ -123,7 +119,7 @@ export default function HeaderLinks(props) {
 					<Flex flexDirection="column">
 						<Link w="100%" href="https://horizon-ui.com/pro">
 							<Button w="100%" h="44px" mb="10px" variant="brand">
-								Buy Horizon UI PRO
+								Ambar
 							</Button>
 						</Link>
 						<Link w="100%" href="https://horizon-ui.com/documentation/docs/introduction">
@@ -139,7 +135,7 @@ export default function HeaderLinks(props) {
 						</Link>
 						<Link w="100%" href="https://github.com/horizon-ui/horizon-ui-chakra">
 							<Button w="100%" h="44px" variant="no-hover" color={textColor} bg="transparent">
-								Try Horizon Free
+								AMBAR
 							</Button>
 						</Link>
 					</Flex>

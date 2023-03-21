@@ -1,39 +1,27 @@
-import React from "react";
-
 import { Icon } from "@chakra-ui/react";
 import {
   MdBarChart,
-  MdPerson,
   MdHome,
-  MdLock,
   MdOutlineShoppingCart,
 } from "react-icons/md";
-
-// Admin Imports
+import { BiBadgeCheck } from "react-icons/bi";
+import { FaTasks } from "react-icons/fa";
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
 import RTL from "views/admin/rtl";
 
-// Auth Imports
 import SignInCentered from "views/auth/signIn";
 
 const routes = [
   {
-    name: "Main Dashboard",
+    name: "Dashboard",
     layout: "/admin",
     path: "/default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: MainDashboard,
-  },
-  {
-    name: "NFT Marketplace",
-    layout: "/admin",
-    path: "/nft-marketplace",
     icon: (
       <Icon
-        as={MdOutlineShoppingCart}
+        as={MdHome}
         width='20px'
         height='20px'
         color='inherit'
@@ -43,29 +31,36 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Data Tables",
+    name: "Main Store",
+    layout: "/admin",
+    path: "/nft-marketplace",
+    icon: <Icon as={MdOutlineShoppingCart} width='20px' height='20px' color='inherit' />,
+    component: MainDashboard,
+  },
+  {
+    name: "Courses",
     layout: "/admin",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/data-tables",
     component: DataTables,
   },
   {
-    name: "Profile",
+    name: "Badges",
     layout: "/admin",
     path: "/profile",
-    icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={BiBadgeCheck} width='20px' height='20px' color='inherit' />,
     component: Profile,
   },
   {
-    name: "Sign In",
+    name: "Tasks",
     layout: "/auth",
-    path: "/sign-in",
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
+    path: "/tasks",
+    icon: <Icon as={FaTasks} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
   },
   {
-    name: "RTL Admin",
-    layout: "/rtl",
+    name: "My Library",
+    layout: "/admin",
     path: "/rtl-default",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: RTL,

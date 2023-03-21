@@ -43,8 +43,8 @@ import {
 import { HSeparator } from "components/separator/Separator";
 import DefaultAuth from "layouts/auth/Default";
 // Assets
-import illustration from "assets/img/auth/auth.png";
-import { FcGoogle } from "react-icons/fc";
+import illustration from "assets/img/auth/auth.jpg";
+import { BsDiscord } from "react-icons/bs";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 
@@ -117,8 +117,8 @@ function SignIn() {
             _hover={googleHover}
             _active={googleActive}
             _focus={googleActive}>
-            <Icon as={FcGoogle} w='20px' h='20px' me='10px' />
-            Sign in with Google
+            <Icon as={BsDiscord} w='20px' h='20px' me='10px' />
+            Sign in with Discord
           </Button>
           <Flex align='center' mb='25px'>
             <HSeparator />
@@ -143,7 +143,7 @@ function SignIn() {
               fontSize='sm'
               ms={{ base: "0px", md: "0px" }}
               type='email'
-              placeholder='mail@simmmple.com'
+              placeholder='Enter Email'
               mb='24px'
               fontWeight='500'
               size='lg'
