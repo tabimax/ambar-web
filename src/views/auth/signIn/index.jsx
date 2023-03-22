@@ -104,22 +104,24 @@ function SignIn() {
           mx={{ base: "auto", lg: "unset" }}
           me='auto'
           mb={{ base: "20px", md: "auto" }}>
-          <Button
-            fontSize='sm'
-            me='0px'
-            mb='26px'
-            py='15px'
-            h='50px'
-            borderRadius='16px'
-            bg={googleBg}
-            color={googleText}
-            fontWeight='500'
-            _hover={googleHover}
-            _active={googleActive}
-            _focus={googleActive}>
-            <Icon as={BsDiscord} w='20px' h='20px' me='10px' />
-            Sign in with Discord
-          </Button>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=https%3A%2F%2Flocalhost%3A3000%2Fauth%2Fdiscord&response_type=code&scope=identify">
+            <Button
+              fontSize='sm'
+              me='0px'
+              mb='26px'
+              py='15px'
+              h='50px'
+              borderRadius='16px'
+              bg={googleBg}
+              color={googleText}
+              fontWeight='500'
+              _hover={googleHover}
+              _active={googleActive}
+              _focus={googleActive}>
+              <Icon as={BsDiscord} w='20px' h='20px' me='10px' />
+              Sign in with Discord
+            </Button>
+          </a>
           <Flex align='center' mb='25px'>
             <HSeparator />
             <Text color='gray.400' mx='14px'>
