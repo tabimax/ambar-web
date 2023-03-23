@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import routes from "routes.js";
 
 // Chakra imports
@@ -61,11 +61,6 @@ export default function Auth() {
             <Box mx='auto' minH='100vh'>
               <Switch>
                 {getRoutes(routes)}
-                <Redirect
-                  from='/auth'
-                  to='/auth/sign-in/default
-                  '
-                />
               </Switch>
             </Box>
           ) : null}
