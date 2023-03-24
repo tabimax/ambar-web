@@ -2,6 +2,10 @@ import { Box, Grid } from "@chakra-ui/react";
 import Banner from "views/admin/profile/components/Banner";
 import banner from "assets/img/auth/banner.png";
 import avatar from "assets/img/avatars/avatar4.jpg";
+import ColumnsTable from "views/admin/dataTables/components/ColumnsTable";
+import { columnsDataColumns } from "views/admin/dataTables/variables/columnsData";
+import tableDataColumns from "views/admin/dataTables/variables/tableDataColumns.json";
+import tableDataCheck from "views/admin/dataTables/variables/tableDataCheck.json";
 
 export default function Overview() {
   return (
@@ -26,6 +30,14 @@ export default function Overview() {
           badges='1'
           ambar='1'
           verified='true'
+        />
+         <ColumnsTable
+          columnsData={columnsDataColumns}
+          tableData={tableDataColumns}
+        />
+        <ColumnsTable
+          columnsData={columnsDataColumns}
+          tableData={tableDataCheck}
         />
       </Grid>
     </Box>
