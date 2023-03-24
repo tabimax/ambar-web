@@ -22,7 +22,7 @@ import React from 'react';
 // Assets
 import navImage from 'assets/img/layout/Navbar.png';
 import { MdNotificationsNone } from 'react-icons/md';
-import { AiFillTrophy, AiFillFire } from 'react-icons/ai';
+import { AiFillTrophy } from 'react-icons/ai';
 import routes from 'routes.js';
 import { ThemeEditor } from './ThemeEditor';
 export default function HeaderLinks(props) {
@@ -60,7 +60,7 @@ export default function HeaderLinks(props) {
 				align="center"
 				me="6px">
 				<Text w="max-content" color={ethColor} fontSize="sm" fontWeight="700" me="6px">
-					1,924
+					101
 					<Text as="span" display={{ base: 'none', md: 'unset' }}>
 						{' '}
 						G
@@ -149,7 +149,7 @@ export default function HeaderLinks(props) {
 					<Avatar
 						_hover={{ cursor: 'pointer' }}
 						color="white"
-						name="Adela Parkson"
+						name="Blaze"
 						bg="#11047A"
 						size="sm"
 						w="40px"
@@ -168,7 +168,7 @@ export default function HeaderLinks(props) {
 							fontSize="sm"
 							fontWeight="700"
 							color={textColor}>
-							👋&nbsp; Hey, Adela
+							👋&nbsp; Hey, Blaze
 						</Text>
 					</Flex>
 					<Flex flexDirection="column" p="10px">

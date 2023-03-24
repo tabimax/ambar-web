@@ -1,13 +1,8 @@
-import React from "react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 
-// Chakra imports
-import { Button, Flex, Link, Text } from "@chakra-ui/react";
-
-// Assets
 import banner from "assets/img/nfts/NftBanner1.png";
 
 export default function Banner() {
-  // Chakra Color Mode
   return (
     <Flex
       direction='column'
@@ -30,7 +25,7 @@ export default function Banner() {
         }}
         fontWeight='700'
         lineHeight={{ base: "32px", md: "42px" }}>
-        Lorem Ipsum dolor sit amet, consectur
+        Your Journey to Success Starts Here!
       </Text>
       <Text
         fontSize='md'
@@ -46,7 +41,7 @@ export default function Banner() {
         fontWeight='500'
         mb='40px'
         lineHeight='28px'>
-        Learn, Compete and get access to opportunities
+        Unlock achievements, acquire skills, and level up with Ambar.
       </Text>
       <Flex align='center'>
         <Button

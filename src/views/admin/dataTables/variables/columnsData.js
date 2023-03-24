@@ -40,19 +40,7 @@ export const columnsDataColumns = [
   {
     Header: "NAME",
     accessor: "name",
-  },
-  {
-    Header: "PROGRESS",
-    accessor: "progress",
-  },
-  {
-    Header: "QUANTITY",
-    accessor: "quantity",
-  },
-  {
-    Header: "DATE",
-    accessor: "date",
-  },
+  }
 ];
 
 export const columnsDataComplex = [
@@ -72,4 +60,11 @@ export const columnsDataComplex = [
     Header: "PROGRESS",
     accessor: "progress",
   },
+];
+
+export const Trophies = [
+  {
+    Header: "NAME",
+    accessor: "name",
+  }
 ];
