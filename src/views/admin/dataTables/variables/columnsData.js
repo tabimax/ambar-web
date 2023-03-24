@@ -61,3 +61,10 @@ export const columnsDataComplex = [
     accessor: "progress",
   },
 ];
+
+export const Trophies = [
+  {
+    Header: "NAME",
+    accessor: "name",
+  }
+];

@@ -60,7 +60,7 @@ export default function HeaderLinks(props) {
 				align="center"
 				me="6px">
 				<Text w="max-content" color={ethColor} fontSize="sm" fontWeight="700" me="6px">
-					1
+					101
 					<Text as="span" display={{ base: 'none', md: 'unset' }}>
 						{' '}
 						G
