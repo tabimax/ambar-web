@@ -60,7 +60,7 @@ export default function ColumnsTable(props) {
           fontSize='22px'
           fontWeight='700'
           lineHeight='100%'>
-          Badges
+          4-Column Table
         </Text>
         <Menu />
       </Flex>
