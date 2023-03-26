@@ -2,7 +2,6 @@ import { Box, Grid } from "@chakra-ui/react";
 import Banner from "views/admin/profile/components/Banner";
 import banner from "assets/img/auth/banner.png";
 import avatar from "assets/img/avatars/avatar4.jpg";
-<<<<<<< HEAD
 import ColumnsTable from "views/admin/dataTables/components/ColumnsTable";
 import ColumnsTableTrophy from "views/admin/dataTables/components/ColumnsTableTrophy";
 import ColumnsTableItems from "views/admin/dataTables/components/ColumnsTableItems";
@@ -10,8 +9,6 @@ import { columnsDataColumns, Trophies} from "views/admin/dataTables/variables/co
 import tableDataColumns from "views/admin/dataTables/variables/tableDataColumns.json";
 import tableDataTrophy from "views/admin/dataTables/variables/tableDataTrophy.json";
 import tableDataItems from "views/admin/dataTables/variables/tableDataItems.json";
-=======
->>>>>>> parent of 028ea14 (update)
 
 export default function Overview() {
   return (
@@ -37,7 +34,6 @@ export default function Overview() {
           ambar='101'
           verified='true'
         />
-<<<<<<< HEAD
         <ColumnsTable
           columnsData={columnsDataColumns}
           tableData={tableDataColumns}
@@ -50,8 +46,6 @@ export default function Overview() {
           columnsData={Trophies}
           tableData={tableDataItems}
         />
-=======
->>>>>>> parent of 028ea14 (update)
       </Grid>
     </Box>
   );
