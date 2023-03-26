@@ -40,7 +40,7 @@ const routes = [
   {
     name: "Tasks",
     layout: "/auth",
-    path: "/SignIn",
+    path: "/tasks",
     icon: <Icon as={FaTasks} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
   },
