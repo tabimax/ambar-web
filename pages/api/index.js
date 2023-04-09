@@ -9,6 +9,10 @@ const cfg = {
 };
 
 app.get('/', (req, res) => {
+    res.status(200).json({ status: '200' })
+})
+
+app.get('/', (req, res) => {
     res.redirect([
         'https://discordapp.com/oauth2/authorize',
         `?client_id=${cfg.id}`,

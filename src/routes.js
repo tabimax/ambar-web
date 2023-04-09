@@ -31,7 +31,7 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Badges",
+    name: "Profile",
     layout: "/admin",
     path: "/profile",
     icon: <Icon as={BiBadgeCheck} width='20px' height='20px' color='inherit' />,
@@ -39,10 +39,10 @@ const routes = [
   },
   {
     name: "Tasks",
-    layout: "/auth",
+    layout: "/admin",
     path: "/tasks",
     icon: <Icon as={FaTasks} width='20px' height='20px' color='inherit' />,
-    component: SignInCentered,
+    component: RTL,
   },
   {
     name: "Ambar Store",
@@ -56,7 +56,7 @@ const routes = [
     layout: "/admin",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/courses",
-    component: DataTables,
+    component: RTL,
   },
   {
     name: "My Library",

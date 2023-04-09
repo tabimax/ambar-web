@@ -463,8 +463,10 @@ export const HorizonLogo = createIcon({
   displayName: "horizonLogo",
   viewBox: "0 0 179 20",
   path: (
-    <g width='179' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      AMBAR
+    <g>
+      <path id="AMBAR">
+        <text transform="matrix(1 0 0 1 133.2481 173.5141)" className="st0 st1 st2">AMBAR</text>
+      </path>
     </g>
   ),
 });
