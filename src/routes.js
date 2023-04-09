@@ -64,6 +64,13 @@ const routes = [
     path: "/default",
     component: SignInCentered,
   },
+  {
+    name: "route",
+    layout: "/api",
+    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+    path: "/oauth2",
+    component: SignInCentered,
+  },
 ];
 
 export default routes;
