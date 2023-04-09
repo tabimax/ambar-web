@@ -460,15 +460,7 @@ export const SpotifyLogo = createIcon({
 });
 
 export const HorizonLogo = createIcon({
-  displayName: "horizonLogo",
-  viewBox: "0 0 179 20",
-  path: (
-    <g>
-      <path id="AMBAR">
-        <text transform="matrix(1 0 0 1 133.2481 173.5141)" className="st0 st1 st2">AMBAR</text>
-      </path>
-    </g>
-  ),
+
 });
 
 export const SupportIcon = createIcon({

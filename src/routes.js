@@ -3,13 +3,13 @@ import {
   MdBarChart,
   MdHome,
   MdOutlineShoppingCart,
+  MdLock
 } from "react-icons/md";
 import { BiBadgeCheck } from "react-icons/bi";
 import { FaTasks } from "react-icons/fa";
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
-import DataTables from "views/admin/dataTables";
 import RTL from "views/admin/rtl";
 
 import SignInCentered from "views/auth/signIn";
@@ -65,6 +65,13 @@ const routes = [
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: RTL,
   },
+  {
+    name: "Sign In",
+    layout: "/auth",
+    path: "/sign-in",
+    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
+    component: SignInCentered,
+  }
 ];
 
 export default routes;
