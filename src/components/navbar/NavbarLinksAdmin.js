@@ -4,7 +4,6 @@ import {
 	Button,
 	Flex,
 	Icon,
-	Image,
 	Link,
 	Menu,
 	MenuButton,
@@ -20,11 +19,9 @@ import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
-import navImage from 'assets/img/layout/Navbar.png';
 import { MdNotificationsNone } from 'react-icons/md';
 import { AiFillTrophy } from 'react-icons/ai';
 import routes from 'routes.js';
-import { ThemeEditor } from './ThemeEditor';
 export default function HeaderLinks(props) {
 	const { secondary } = props;
 	// Chakra Color Mode
@@ -39,7 +36,6 @@ export default function HeaderLinks(props) {
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.18)',
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
 	);
-	const borderButton = useColorModeValue('secondaryGray.500', 'whiteAlpha.200');
 	return (
 		<Flex
 			w={{ sm: '100%', md: 'auto' }}
