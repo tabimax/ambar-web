@@ -11,7 +11,6 @@ import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import RTL from "views/admin/rtl";
-
 import SignInCentered from "views/auth/signIn";
 
 const routes = [
@@ -59,19 +58,12 @@ const routes = [
     component: RTL,
   },
   {
-    name: "My Library",
-    layout: "/admin",
-    path: "/library",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: RTL,
-  },
-  {
-    name: "Sign In",
+    name: "route",
     layout: "/auth",
-    path: "/sign-in",
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+    path: "/default",
     component: SignInCentered,
-  }
+  },
 ];
 
 export default routes;
