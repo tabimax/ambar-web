@@ -9,7 +9,18 @@ import React from "react";
 // FUNCTIONS
 
 function SidebarContent(props) {
-  const { routes } = props;
+  let { routes } = props;
+  let i = 0;
+  for (i = 0; i <= routes.length - 1; i++) {
+    if (routes[i].name === "route") {
+      delete routes[i].name;
+      delete routes[i].layout;
+      delete routes[i].icon;
+      delete routes[i].path;
+      delete routes[i].component;
+      console.log(routes[i])
+    }
+  }
   // SIDEBAR
   return (
     <Flex direction='column' height='100%' pt='25px' borderRadius='30px'>
