@@ -3,7 +3,6 @@ import {
   MdBarChart,
   MdHome,
   MdOutlineShoppingCart,
-  MdBarChart
 } from "react-icons/md";
 import { BiBadgeCheck } from "react-icons/bi";
 import { FaTasks } from "react-icons/fa";
