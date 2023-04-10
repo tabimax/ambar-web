@@ -1,5 +1,6 @@
 import { Icon } from "@chakra-ui/react";
 import {
+  MdBarChart,
   MdHome,
   MdOutlineShoppingCart,
   MdBarChart
