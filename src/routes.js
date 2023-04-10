@@ -2,8 +2,10 @@ import { Icon } from "@chakra-ui/react";
 import {
   MdHome,
   MdOutlineShoppingCart,
+  MdBarChart
 } from "react-icons/md";
 import { BiBadgeCheck } from "react-icons/bi";
+import { FaTasks } from "react-icons/fa";
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
