@@ -15,17 +15,14 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-// Custom components
 import { HSeparator } from "components/separator/Separator";
 import DefaultAuth from "layouts/auth/Default";
-// Assets
 import illustration from "assets/img/auth/auth.jpg";
 import { BsDiscord } from "react-icons/bs";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 
 function SignIn() {
-  // Chakra color mode
   const textColor = useColorModeValue("navy.700", "white");
   const textColorSecondary = "gray.400";
   const textColorDetails = useColorModeValue("navy.700", "secondaryGray.600");
@@ -80,7 +77,7 @@ function SignIn() {
           mx={{ base: "auto", lg: "unset" }}
           me='auto'
           mb={{ base: "20px", md: "auto" }}>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fdiscord&response_type=code&scope=identify">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Foauth2&response_type=code&scope=identify">
             <Button
               fontSize='sm'
               me='0px'

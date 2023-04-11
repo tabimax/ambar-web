@@ -65,7 +65,7 @@ const routes = [
   },
   {
     name: "route",
-    layout: "/api",
+    layout: "/auth",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/oauth2",
     component: SignInCentered,
