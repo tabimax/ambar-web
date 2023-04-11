@@ -77,7 +77,7 @@ function SignIn() {
           mx={{ base: "auto", lg: "unset" }}
           me='auto'
           mb={{ base: "20px", md: "auto" }}>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Foauth2&response_type=code&scope=identify">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fauth%2Foauth2&response_type=code&scope=identify">
             <Button
               fontSize='sm'
               me='0px'

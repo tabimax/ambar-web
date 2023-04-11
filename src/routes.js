@@ -11,6 +11,7 @@ import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import RTL from "views/admin/rtl";
 import SignInCentered from "views/auth/signIn";
+import Oauth2Comp from "views/auth/oauth2";
 
 const routes = [
   {
@@ -68,7 +69,7 @@ const routes = [
     layout: "/auth",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/oauth2",
-    component: SignInCentered,
+    component: Oauth2Comp,
   },
 ];
 
