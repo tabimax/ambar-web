@@ -5,6 +5,7 @@ const Dashboard = () => {
     const [user, setUser] = useState([]);
     const getUserDetails = useCallback(async (accessToken, tokenType) => {
         try {
+            console.log(accessToken, tokenType)
             const response = await axios.get("https://discord.com/api/users/@me", {
                 headers: {
                     authorization: `${tokenType} ${accessToken}`
