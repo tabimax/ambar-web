@@ -18,7 +18,6 @@ ReactDOM.render(
           <Switch>
             <Route path={`/auth`} component={AuthLayout} />
             <Route path={`/admin`} component={AdminLayout} />
-            <Route path={`/rtl`} component={RTLLayout} />
             <Route path={`/api`} component={ApiLayout} />
           </Switch>
         </HashRouter>
