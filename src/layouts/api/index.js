@@ -1,10 +1,3 @@
-import { useState } from "react";
-
-export default function API(props) {
-    const [user, setUser] = useState([]);
-    return (
-        <div>
-            <p>{user}</p>
-        </div>
-    );
+export default function handler(req, res) {
+    res.status(200).json({ name: 'John Doe' })
 }
