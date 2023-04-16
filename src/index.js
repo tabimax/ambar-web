@@ -4,7 +4,6 @@ import "assets/css/App.css";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import AuthLayout from "layouts/auth";
 import AdminLayout from "layouts/admin";
-import ApiLayout from "layouts/api";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "theme/theme";
 import { ThemeEditorProvider } from "@hypertheme-editor/chakra-ui";
