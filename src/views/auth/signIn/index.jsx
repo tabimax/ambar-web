@@ -1,19 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-  Box,
-  Button,
-  Checkbox,
-  Flex,
-  FormControl,
-  FormLabel,
-  Heading,
-  Icon,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Text,
-  useColorModeValue,
+import {Box, Button, Checkbox, Flex, FormControl, FormLabel, Heading, Icon, Input, InputGroup, InputRightElement, Text, useColorModeValue,
 } from "@chakra-ui/react";
 import { HSeparator } from "components/separator/Separator";
 import DefaultAuth from "layouts/auth/Default";
@@ -77,14 +64,14 @@ function SignIn() {
           mx={{ base: "auto", lg: "unset" }}
           me='auto'
           mb={{ base: "20px", md: "auto" }}>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fapi%2Foauth2&response_type=code&scope=identify">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1058457937586176000&redirect_uri=https%3A%2F%2Fdiscord-oauth-tutorial.dinxsh.repl.co&response_type=code&scope=identify%20guilds.members.read">
             <Button
               fontSize='sm'
               me='0px'
               mb='26px'
               py='15px'
               h='50px'
-              borderRadius='16px'
+              borde rRadius='16px'
               bg={googleBg}
               color={googleText}
               fontWeight='500'
