@@ -32,7 +32,7 @@ export default function Overview() {
           job=' '
           badges='2'
           ambar='101'
-          verified='true'
+          throphies='5'
         />
         <ColumnsTable
           columnsData={columnsDataColumns}
